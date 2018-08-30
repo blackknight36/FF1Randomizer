@@ -626,6 +626,7 @@ namespace FF1Lib
 
 			WriteSeedAndFlags(Version, seed.ToHex(), Flags.EncodeFlagsText(flags));
 			ExtraTrackingAndInitCode();
+            ModifyAirship();
 		}
 
 		private void EnableNPCSwatter()
