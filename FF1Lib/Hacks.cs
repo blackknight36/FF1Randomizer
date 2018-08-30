@@ -666,5 +666,11 @@ namespace FF1Lib
 			// Hacks the game so that Inns do not save the game
 			Put(0x3A53D, Blob.FromHex("EAEAEA"));
 		}
-	}
+
+        public void ModifyCursor()
+        {
+            Put(0x026F00,Blob.FromHex("00081C1F7FF4947700081417749FFF7C000000FCFE0F0FFE000000FC02F1F102171408001E7F1E001F1C08001E7F1E00FC00000000FE0000FC00000000FE0000"));
+	    }
+    }
+
 }
